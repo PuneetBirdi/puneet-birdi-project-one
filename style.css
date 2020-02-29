@@ -9,7 +9,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*------------------END OF SETUP SNIPPET------------*/
 
+section { 
+    border: 1px solid red; 
+}
+
+div { 
+    border: 1px solid blue; 
+}
+
+
+
+
 /*------------------GLOBAL PROPERTIES---------------*/
+img{
+    width: 100%;
+    height: 100%;
+}
 
 html{
     font-size: 62.5%;
@@ -45,6 +60,27 @@ a{
     font-size: 4.2rem;
 }
 
+.about-us, .our-mission{
+    height: 60vh;
+}
+
+.meet-alissa{
+    height: 40vh;
+}
+
+.section-info, .section-image{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+.section-info{
+    padding: 100px;
+}
+
+.section-image{
+
+}
 
 /*-------------HEADER STYLING-----------*/
 
@@ -84,3 +120,12 @@ nav{
     height: 30px;
     text-align: center;
 }
+
+
+/* ----------ABOUT US SECTION--------- */
+
+
+
+/* ---------OUR MISSION SECTION------- */
+
+

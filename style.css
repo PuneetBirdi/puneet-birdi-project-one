@@ -26,9 +26,16 @@ img{
     height: 100%;
 }
 
+div img{
+    object-fit: fill;
+}
+
 html{
     font-size: 62.5%;
     color: black;
+    font-family: Catamaran, sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 h1{
@@ -48,9 +55,8 @@ p{
     line-height: 2.9rem;
 }
 
-.wrapper{
-    width: 40%;
-    margin: 0 auto;
+section{
+    width: 100%;
 }
 
 
@@ -60,27 +66,46 @@ a{
     font-size: 4.2rem;
 }
 
-.about-us, .our-mission{
-    height: 60vh;
+button{
+    background-color: black;
+    padding: 20px;
+    color: #F2A11C;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.9rem;
+    text-transform: uppercase;
 }
 
-.meet-alissa{
-    height: 40vh;
+.wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.centered-header{
+    text-align: center;
+    width: 100%;
+}
+
+.about-us, .our-mission{
+    height: 50vh;
 }
 
 .section-info, .section-image{
     width: 50%;
+    height: 100%;
     float: left;
     margin: 0 auto;
+    position:relative;
+}
+.info-container, .centered-header{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 0px 40px;
 }
 
-.section-info{
-    padding: 100px;
-}
-
-.section-image{
-
-}
 
 /*-------------HEADER STYLING-----------*/
 
@@ -94,18 +119,17 @@ header{
 }
 
 
-h1{
-    margin-top: 50%;
-    text-align: center;;
+.main-heading{
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 90%;
 }
+
+
 
 
 /*---------SOCIAL MEDIA SIDEBAR--------*/
-.social-media{
-    width: 20%;
-    float: left;
-    margin-top: 50%;
-}
 
 
 /*------NAVBAR Styling------*/
@@ -117,8 +141,9 @@ nav ul li{
 
 nav{
     padding-top: 20px;
-    height: 30px;
+    height: 10%;
     text-align: center;
+    width: 100%
 }
 
 
@@ -128,4 +153,61 @@ nav{
 
 /* ---------OUR MISSION SECTION------- */
 
+/* ---------MEET ALISSA SECTION------- */
+.meet-alissa{
+    height: 40vh;
+    background-color: #F4F4F4;
+}
 
+.meet-alissa .section-info{
+    width: 100%;
+    float:left;
+}
+
+.img-wrapper{
+    float:left;
+    width: 20%;
+    margin: 0 20px;
+}
+
+.meet-alissa .info-container{
+    width: 100%;
+}
+
+
+
+/* ---------LINK SECTION------- */
+
+.link-section{
+    background-image: url(./biker-land-assets/image-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+}
+
+.icon-link{
+    float:left;
+    width: 33%;
+    text-align: center;
+}
+
+/* ---------THE GRAM - SECTION------- */
+
+.the-gram{
+    height: 50vh;
+}
+
+.img-container{
+    float:left;
+    width: 33%;
+}
+
+.the-gram h2{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+footer{
+    height: 45vh;
+    background-color: #4A4A4A;
+}

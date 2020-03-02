@@ -48,6 +48,11 @@ h2{
     font-family: Pacifico, serif;
     font-size: 4.2rem;
 }
+h3{
+    font-family: Pacifico, serif;
+    font-size: 2.8rem;
+    padding: 15px 0;
+}
 
 p{
     font-family: Catamaran, sans-serif;
@@ -63,7 +68,7 @@ section{
 a{
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 4.2rem;
+    font-size: 2.3rem;
 }
 
 button{
@@ -76,16 +81,17 @@ button{
     text-transform: uppercase;
 }
 
+i{
+    color: white;
+    padding: 15px;
+}
+
 .wrapper{
     width: 90%;
     height: 100%;
     margin: 0 auto;
 }
 
-.centered-header{
-    text-align: center;
-    width: 100%;
-}
 
 .about-us, .our-mission{
     height: 50vh;
@@ -98,12 +104,12 @@ button{
     margin: 0 auto;
     position:relative;
 }
-.info-container, .centered-header{
+.vertical-center{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
-    width: 100%;
     padding: 0px 40px;
+    width: inherit;
 }
 
 
@@ -111,19 +117,16 @@ button{
 
 header{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(./biker-land-assets/image-1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position:center;
     position: relative;
 }
 
-
-.main-heading{
-    float: center;
+header h1{
     text-align: center;
-    margin: 0 auto;
-    height: 90%;
 }
 
 
@@ -131,16 +134,23 @@ header{
 
 /*---------SOCIAL MEDIA SIDEBAR--------*/
 
+.social-media{
+    display: inline-block;
+}
+
+.social-media i{
+    color:#F2A11C;
+}
 
 /*------NAVBAR Styling------*/
 
 nav ul li{
     display: inline;
-    margin: 20px;
+    margin: 40px;
 }
 
 nav{
-    padding-top: 20px;
+    padding-top: 40px;
     height: 10%;
     text-align: center;
     width: 100%
@@ -170,7 +180,7 @@ nav{
     margin: 0 20px;
 }
 
-.meet-alissa .info-container{
+.meet-alissa , .info-container{
     width: 100%;
 }
 
@@ -182,32 +192,65 @@ nav{
     background-image: url(./biker-land-assets/image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 40vh;
+    position:relative;
 }
 
-.icon-link{
+.figure-wrapper{
     float:left;
-    width: 33%;
+    width: 33.33%;
     text-align: center;
+    color:#F2A11C;
 }
+
 
 /* ---------THE GRAM - SECTION------- */
 
 .the-gram{
-    height: 50vh;
+    height: auto;
 }
 
 .img-container{
     float:left;
-    width: 33%;
+    width: 30%;
+    margin: 2% 1%;
 }
 
 .the-gram h2{
-    margin: 10px 0px;
+    margin: 3% 0;
     text-align: center;
 }
 
+
+/* ---------FOOTER - SECTION------- */
+
 footer{
-    height: 45vh;
-    background-color: #4A4A4A;
+    background-color:#4A4A4A;
+    height: auto;
+}
+
+footer a{
+    font-size: 2.0rem;
+}
+
+.contact-info{
+    float:left;
+    width: 50%;
+}
+
+.subscribe{
+    float:left;
+    width: 50%;
+}
+
+input[type=email]{
+    float:left;
+    width: 80%;
+    padding: 10px;
+}
+input[type=submit]{
+    float:left;
+    width: 20%;
+    padding: 10px;
+    background-color:#F2A11C;
 }

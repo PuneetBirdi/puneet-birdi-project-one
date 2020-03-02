@@ -9,16 +9,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*------------------END OF SETUP SNIPPET------------*/
 
-/* section { 
-    border: 1px solid red; 
-}
-
-div { 
-    border: 1px solid blue; 
-} */
-
-
-
 
 /*------------------GLOBAL PROPERTIES---------------*/
 img{
@@ -82,6 +72,7 @@ button{
     font-weight: bold;
     line-height: 2.9rem;
     text-transform: uppercase;
+    border: none;
 }
 
 i{
@@ -89,15 +80,18 @@ i{
     padding: 15px;
 }
 
+
+/* ----------RE-USED CLASSES-------- */
+
 .wrapper{
     width: 90%;
     height: 100%;
     margin: 0 auto;
 }
 
-
 .about-us, .our-mission{
-    height: 50vh;
+    height: 45vh;
+    width: 100%;
 }
 
 .section-info, .section-image{
@@ -111,8 +105,13 @@ i{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
-    padding: 0px 40px;
+    padding: 0;
     width: inherit;
+}
+
+.info-container{
+    padding: 20px;
+    width: 90%;
 }
 
 
@@ -140,9 +139,6 @@ header h1{
     position:absolute;
     right: 0;
     top:-45px;
-}
-
-.social-media i{
     color:#F2A11C;
 }
 
@@ -157,38 +153,39 @@ nav{
     padding-top: 40px;
     height: 10%;
     text-align: center;
-    width: 100%
+    width: 100%;
+    position:relative;
 }
 
+.hamburger{
+    display: none;
+    position: absolute;
+    right: 0;
+}
 
-/* ----------ABOUT US SECTION--------- */
-
-
-
-/* ---------OUR MISSION SECTION------- */
 
 /* ---------MEET ALISSA SECTION------- */
 .meet-alissa{
-    height: 40vh;
+    min-height: 50vh;
+    width: 100%;
     background-color: #F4F4F4;
+    position:relative;
 }
 
-.meet-alissa .section-info{
-    width: 100%;
+.meet-alissa .info-container{
     float:left;
+    width: 80%;
+    margin: 0;
+    padding: 20px;
 }
 
 .img-wrapper{
     float:left;
     width: 20%;
-    margin: 0 20px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
 }
-
-.meet-alissa , .info-container{
-    width: 100%;
-}
-
-
 
 /* ---------LINK SECTION------- */
 
@@ -201,6 +198,7 @@ nav{
 }
 
 .figure-wrapper{
+    height: 33.33%;
     float:left;
     width: 33.33%;
     text-align: center;
@@ -214,7 +212,6 @@ nav{
     height: auto;
 }
 
-
 .img-container{
     float:left;
     width: 30%;
@@ -225,7 +222,6 @@ nav{
     margin: 3% 0;
     text-align: center;
 }
-
 
 /* ---------FOOTER - SECTION------- */
 
@@ -267,8 +263,6 @@ input[type=submit]{
     border:none;
 }
 
-
-
 .copyright{
     background-color:black;
     color:#4A4A4A;
@@ -276,3 +270,39 @@ input[type=submit]{
     padding: 0;
     text-align: center;
 }
+
+/* ----------MEDIA QUERIES-------- */
+
+@media (max-width: 980px){
+        .section-image, .section-info, .contact-info, .subscribe, .info-container{
+            width: 100%;
+        }
+
+        .meet-alissa{
+            height: auto;
+        }
+
+        .figure-wrapper{
+            width: 100%;
+            float: none;
+        }
+        header nav ul, .social-media{
+            display: none;
+        }
+
+        .hamburger{
+            display: inline-block;
+        }
+}
+
+@media (max-width: 680px){
+
+    footer nav{
+        padding: 15px;
+    }
+        footer nav ul li{
+        margin: 15px;
+    }
+}
+
+

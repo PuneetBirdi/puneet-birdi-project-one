@@ -9,13 +9,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*------------------END OF SETUP SNIPPET------------*/
 
-section { 
+/* section { 
     border: 1px solid red; 
 }
 
 div { 
     border: 1px solid blue; 
-}
+} */
 
 
 
@@ -47,17 +47,20 @@ h1{
 h2{
     font-family: Pacifico, serif;
     font-size: 4.2rem;
+    padding: 10px 0;
 }
 h3{
     font-family: Pacifico, serif;
     font-size: 2.8rem;
     padding: 15px 0;
+    color: #F2A11C;
 }
 
 p{
     font-family: Catamaran, sans-serif;
     font-size: 2.0rem;
     line-height: 2.9rem;
+    padding: 10px 0;
 }
 
 section{
@@ -131,11 +134,12 @@ header h1{
 
 
 
-
 /*---------SOCIAL MEDIA SIDEBAR--------*/
 
 .social-media{
-    display: inline-block;
+    position:absolute;
+    right: 0;
+    top:-45px;
 }
 
 .social-media i{
@@ -206,9 +210,10 @@ nav{
 
 /* ---------THE GRAM - SECTION------- */
 
-.the-gram{
+.the-gram, .grid-container{
     height: auto;
 }
+
 
 .img-container{
     float:left;
@@ -225,32 +230,49 @@ nav{
 /* ---------FOOTER - SECTION------- */
 
 footer{
-    background-color:#4A4A4A;
     height: auto;
+    background-color:#1F2022;
+    color: #FFFFFF;
 }
 
 footer a{
     font-size: 2.0rem;
 }
 
-.contact-info{
-    float:left;
-    width: 50%;
+footer nav{
+    padding: 40px;
 }
 
-.subscribe{
+
+.contact-info, .subscribe{
     float:left;
     width: 50%;
+    padding: 20px 0;
 }
 
 input[type=email]{
     float:left;
     width: 80%;
-    padding: 10px;
+    padding: 15px;
+    border: none;
 }
 input[type=submit]{
     float:left;
     width: 20%;
-    padding: 10px;
+    padding: 15px;
     background-color:#F2A11C;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border:none;
+}
+
+
+
+.copyright{
+    background-color:black;
+    color:#4A4A4A;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
